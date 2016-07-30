@@ -5,10 +5,10 @@ var endpoint = "Pinballz, 8940 Research Blvd Ste 100, Austin, TX 78758"; // Comm
 var trafficlowthreshold = 3; // If traffic adds 3 min. or less to commute, traffic is "low."
 var traffichighthreshold = 10; // If traffic adds 10 min. or more to commute, traffic is "high." If traffic adds between 3 and 10 minutes to commute, traffic is "medium."
 var refreshrate = 5; // Traffic data is updated every 5 minutes.
-var myparticleemail = "StoreThisLocallyOrInAzure" // The email address you use to log in to build.particle.io.
-var myparticlepw = "StoreThisLocallyOrInAzure" // The password you use to log in to build.particle.io.
-var myparticletoken = "StoreThisLocallyOrInAzure" // Photon token (build.particle.io > Settings)
-var mybingmapskey = "StoreThisLocallyOrInAzure" // Bing Maps API Key (bingmapsportal.com)
+// var myparticleemail = "StoreThisLocallyOrInAzure" // The email address you use to log in to build.particle.io.
+// var myparticlepw = "StoreThisLocallyOrInAzure" // The password you use to log in to build.particle.io.
+// var myparticletoken = "StoreThisLocallyOrInAzure" // Photon token (build.particle.io > Settings)
+// var mybingmapskey = "StoreThisLocallyOrInAzure" // Bing Maps API Key (bingmapsportal.com)
 //
 ///////////////////////////////////////
 
@@ -64,6 +64,7 @@ function getTraffic() {
                     console.log("Failed to publish event. :(");
                 }
             );
+            console.log("Is this forever ? ...");
         });
     });
 }
